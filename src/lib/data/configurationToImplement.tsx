@@ -29,7 +29,7 @@ export const configurationToImplement: DynamicFormDataType[] = [
     defaultValue: 30,
   },
   {
-    type: "enumInput",
+    type: "currencyInput",
     label: "Vehicle Trade Value",
     path: "vehicle.tradeValue",
     values: ["EUR", "USD", "GBP"],

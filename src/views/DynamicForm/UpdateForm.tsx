@@ -56,6 +56,20 @@ const UpdateForm: FC<IUpdateForm> = ({
           />
         );
 
+      case "currencyInput":
+        return (
+          <Select
+            key={`form-${path}`}
+            label={label}
+            menuItems={values ? mappedField(values) : [{ value: "", name: "" }]}
+            name={defaultValue}
+            value={defaultValue}
+            changeHandler={(event: any) =>
+              updateHandler(event.target.value, path)
+            }
+          />
+        );
+
       default:
         return (
           <TextInput
