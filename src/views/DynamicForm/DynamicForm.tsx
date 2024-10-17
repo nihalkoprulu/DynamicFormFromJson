@@ -61,7 +61,7 @@ const DynamicForm: FC = () => {
     setFormData(configurationToImplement);
   };
 
-  const updateHandler = (value: string | number, path: string): void => {
+  const updateHandler: (value: string | number, path: string) => void = (value, path) => {
     if (!path) {
       console.warn("Invalid input: path shouldn't be empty.");
       return;
