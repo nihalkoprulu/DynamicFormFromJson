@@ -32,7 +32,6 @@ Users can rename and remove fields. (Adding new fields and reordering fields wil
 
 `formatFieldPath:` Formats field labels into valid paths for the form.
 
-
 ### Steps to Run the Project
 
 Follow the steps below to run the project on your local machine:
@@ -41,13 +40,13 @@ Follow the steps below to run the project on your local machine:
 
 Clone the project files to your local machine:
 
-`git clone https://github.com/nihalkoprulu/Xtract-Task.git`
+`git clone https://github.com/nihalkoprulu/DynamicFormFromJson.git`
 
 #### 2. Navigate to the Project Directory
 
 Move into the cloned project folder:
 
-`cd Xtract-Task`
+`cd DynamicFormFromJson`
 
 #### 3.Install Required Dependencies
 
