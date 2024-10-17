@@ -80,7 +80,7 @@ const DynamicForm: FC = () => {
     setInitialData(updatedData);
   };
 
-  const deleteField = (path: string): void => {
+  const deleteField: (path: string) => void = (path) => {
     setFormData((prevFormData) => {
       const updatedData: DynamicFormDataType[] = prevFormData.filter(
         (data) => data.path !== path
@@ -89,7 +89,7 @@ const DynamicForm: FC = () => {
     });
   };
 
-  const formatFieldPath = (fieldName: string): string => {
+  const formatFieldPath: (fieldName: string) => string = (fieldName) => {
     return fieldName
       .trim() // Trim leading and trailing spaces
       .toLowerCase() // Convert to lowercase
@@ -99,7 +99,10 @@ const DynamicForm: FC = () => {
       .replace(/^\.+|\.+$/g, ""); // Remove leading and trailing dots
   };
 
-  const updateConfigurationHandler = (value: string, path: string): void => {
+  const updateConfigurationHandler: (value: string, path: string) => void = (
+    value,
+    path
+  ) => {
     if (!path) {
       console.warn("Invalid input: path shouldn't be empty.");
       return;
