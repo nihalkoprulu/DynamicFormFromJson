@@ -5,7 +5,7 @@ export const configurationToImplement: DynamicFormDataType[] = [
     type: "textInput",
     label: "Driver Name",
     path: "driver.name",
-    defaultValue: "Peter Nolan",
+    defaultValue: "James Blue",
   },
   {
     type: "textInput",
